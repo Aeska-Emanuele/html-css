@@ -1,14 +1,23 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Passion+One:wght@400;700;900&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:  'Passion One', sans-serif;
+    --fonte3:  'Combo", system-ui';
+}
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 
 }
 
 html, body{
     min-height: 100vh;
    background-color: darkgray;
+   font-family: var(--fonte1);
 }
 
 header{
@@ -20,6 +29,8 @@ header{
 header > h1{
     padding: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 3em;
 }
 
     header > p{
@@ -41,6 +52,8 @@ header > h1{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 1.5em;
  }
 
  section.normal{
